@@ -1,2 +1,3 @@
 # processamentoImagens-TR6
-Desenvolvimento de aplicação da disciplina processamento de imagens
+
+Implemente o Filtro da Média. Realizando o tratamento dos pixels das bordas da imagem.
