@@ -29,22 +29,22 @@ void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 
 	for(x = 0; x < Image1->Width; x++){
 		for(y = 0; y < Image1->Height; y++){
-			r = GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) + GetRValue(Image1->Canvas->Pixels[x-1][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x+1][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) + GetRValue(Image1->Canvas->Pixels[x-1][y-1]);
+			r = GetRValue(Image1->Canvas->Pixels[x-1][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y+1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y+1]);
 			r = (int)(r/9);
 
-			b = GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) + GetRValue(Image1->Canvas->Pixels[x-1][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x+1][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) + GetRValue(Image1->Canvas->Pixels[x-1][y-1]);
+			b = GetRValue(Image1->Canvas->Pixels[x-1][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y+1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y+1]);
 			b = (int)(b/9);
 
-			g = GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) + GetRValue(Image1->Canvas->Pixels[x-1][y+1]) +
-					   GetRValue(Image1->Canvas->Pixels[x+1][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) + GetRValue(Image1->Canvas->Pixels[x-1][y-1]);
+			g = GetRValue(Image1->Canvas->Pixels[x-1][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) +
+					   GetRValue(Image1->Canvas->Pixels[x-1][y+1]) + GetRValue(Image1->Canvas->Pixels[x][y+1]) + GetRValue(Image1->Canvas->Pixels[x+1][y+1]);
 			g = (int)(g/9);
 
-            Image1->Canvas->Pixels[x][y] = RGB(r,g,b);
+			Image1->Canvas->Pixels[x][y] = RGB(r,g,b);
 		}
 	}
 };

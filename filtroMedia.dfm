@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Filtro M'#233'dia'
-  ClientHeight = 448
-  ClientWidth = 767
+  ClientHeight = 482
+  ClientWidth = 696
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,20 +11,27 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
-    Left = 40
-    Top = 24
+    Left = 24
+    Top = 72
     Width = 505
     Height = 393
   end
   object SpeedButton1: TSpeedButton
-    Left = 632
-    Top = 168
-    Width = 103
+    Left = 551
+    Top = 72
+    Width = 137
     Height = 49
+    Cursor = crHandPoint
     Caption = 'Imagem'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
     Glyph.Data = {
       F6060000424DF606000000000000360000002800000018000000180000000100
       180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
@@ -82,14 +89,21 @@ object Form1: TForm1
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+    ParentFont = False
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-    Left = 632
-    Top = 232
-    Width = 103
+    Left = 551
+    Top = 144
+    Width = 137
     Height = 49
+    Cursor = crHandPoint
     Caption = 'Calcular'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
     Glyph.Data = {
       F6060000424DF606000000000000360000002800000018000000180000000100
       180000000000C0060000C40E0000C40E00000000000000000000FFFFFFFFFFFF
@@ -147,6 +161,20 @@ object Form1: TForm1
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+    ParentFont = False
     OnClick = SpeedButton2Click
+  end
+  object Label1: TLabel
+    Left = 256
+    Top = 16
+    Width = 192
+    Height = 25
+    Caption = 'FILTRO DA M'#201'DIA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuHighlight
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
 end
