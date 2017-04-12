@@ -18,7 +18,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
 {
 //  Image1->Picture->LoadFromFile("cg.bmp"); // Carregando imagem
-	Image1->Picture->LoadFromFile("branc.bmp"); // Carregando imagem
+	Image1->Picture->LoadFromFile("5.bmp"); // Carregando imagem
 	Image1->Stretch = true; //redimensiona
 	Image1->Refresh(); //atualiza
 }

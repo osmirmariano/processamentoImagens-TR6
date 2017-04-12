@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Filtro M'#233'dia'
-  ClientHeight = 482
-  ClientWidth = 696
+  ClientHeight = 565
+  ClientWidth = 764
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,14 +15,14 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
-    Left = 24
-    Top = 72
-    Width = 505
-    Height = 393
+    Left = 16
+    Top = 56
+    Width = 584
+    Height = 503
   end
   object SpeedButton1: TSpeedButton
-    Left = 551
-    Top = 72
+    Left = 619
+    Top = 56
     Width = 137
     Height = 49
     Cursor = crHandPoint
@@ -93,8 +93,8 @@ object Form1: TForm1
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-    Left = 551
-    Top = 144
+    Left = 619
+    Top = 128
     Width = 137
     Height = 49
     Cursor = crHandPoint
