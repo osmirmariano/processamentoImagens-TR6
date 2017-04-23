@@ -27,7 +27,7 @@ void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 {
 	int x, y, r, b, g;
 
-	for(x = 0; x < Image1->Width; x++){
+	for(x = 0; x < Image1->Width; x++){//
 		for(y = 0; y < Image1->Height; y++){
 			r = GetRValue(Image1->Canvas->Pixels[x-1][y-1]) + GetRValue(Image1->Canvas->Pixels[x][y-1]) + GetRValue(Image1->Canvas->Pixels[x+1][y-1]) +
 					   GetRValue(Image1->Canvas->Pixels[x-1][y]) + GetRValue(Image1->Canvas->Pixels[x][y]) + GetRValue(Image1->Canvas->Pixels[x+1][y]) +
